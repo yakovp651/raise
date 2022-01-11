@@ -1,10 +1,10 @@
-const removeHide = (e) => {
+/*const removeHide = (e) => {
     e.classList.remove("hide");
 }
 
 const addHide = (e) => {
     e.classList.add("hide");
-}
+}*/
 
 
 const shuffle = (l, dict) =>    
@@ -34,5 +34,9 @@ links = document.querySelectorAll(".pageHeaderMenuLink > a");
 
 
 setInterval(()=>shuffle(links, urls), 1000);
+
+const removeOrAddHide = (e) => {
+    e.classList.toggle("hide");
+}
 
 
